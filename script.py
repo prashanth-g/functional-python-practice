@@ -106,3 +106,4 @@ if len(height_list) > 0:
     from operator import add
     func_average_height = functools.reduce(add, height_list, 0) / len(height_list)
     print(func_average_height)
+
