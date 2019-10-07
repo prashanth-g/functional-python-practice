@@ -15,7 +15,7 @@ def test_pipeline_without_country_field():
          {'name': 'Pixed', 'active': True},
          {'name': 'Windows', 'active': False}]
     result = pipeline.pipeline(mobile_phones, [pipeline.call(lambda x: 'Japan', 'country')])
-    assert(list(result)[0].get('country') is 'Japan')
+    assert(list(result)[0].get('country') == 'Japan')
 
 
 
