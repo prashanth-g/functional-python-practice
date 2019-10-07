@@ -1,3 +1,6 @@
+import sys
+sys.path.append('./src')
+
 import rule_sequence
 
 def test_zero():
